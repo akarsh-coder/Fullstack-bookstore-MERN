@@ -1,8 +1,8 @@
 import express from "express"
-import { Book } from "../models/bookeModel.js";
+import { Book } from "../models/bookModel.js";
 const router = express.Router()
 // Route to save new book
-router.post("", async (request, response) => {
+router.post("/", async (request, response) => {
     try {
       if (
         !request.body.title ||
